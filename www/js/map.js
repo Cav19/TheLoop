@@ -3,7 +3,28 @@
 
 $(document).ready(function(){
 	var inAddMode = false;
+	var mapWidth = $("#map_img").width();
+	var mapHeight = $("#map_img").height();
+	//Must keep the pixel ratio of original image constant
+	var mapPinWidth = mapWidth*(0.05);
+	var mapPinHeight = mapPinWidth;
+	var pinOffsetLeft = mapPinWidth/2;
+	var pinOffsetTop = mapPinHeight;
 
+	//Hardcoded Example
+	var exampleMapPin =$('<img src="img/map_pin.png" />');
+
+	exampleMapPin.prop('id', 'map_pin');
+	exampleMapPin.css({
+		position: 'absolute',
+		width: mapPinWidth,
+		height: mapPinHeight,
+		left: 330.44,
+		top: -7.12,
+		cursor: 'pointer'
+	});
+
+	$("#map").append(exampleMapPin);
 	//add the add_button
 	var mapWidth = $('#map_img').width();
 	var mapHeight = $('#map_img').height();
@@ -37,7 +58,7 @@ $(document).ready(function(){
 				var mapHeight = $("#map_img").height();
 
 				//Must keep the pixel ratio of original image constant
-				var mapPinWidth = mapWidth*(0.08);
+				var mapPinWidth = mapWidth*(0.05);
 				var mapPinHeight = mapPinWidth;
 
 				var pinOffsetLeft = mapPinWidth/2;
@@ -52,8 +73,9 @@ $(document).ready(function(){
 					top: e.pageY-pinOffsetTop,
 					cursor: 'pointer'
 				});
-
+				
 				$("#map").append(mapPin);
+				location.href = "eventCreatorIonic.html";
 				inAddMode = false;
 			//Now make the app take you to the event creation page
 			}
