@@ -12,6 +12,19 @@ $(document).ready(function(){
 	var pinOffsetTop = mapPinHeight;
 
 	//Hardcoded Example
+	var catanMapPin =$('<img src="img/map_pin.png" />');
+
+	catanMapPin.prop('id', 'map_pin');
+	catanMapPin.css({
+		position: 'absolute',
+		width: mapPinWidth,
+		height: mapPinHeight,
+		left: 394.4,
+		top: 40.8,
+		cursor: 'pointer'
+	});
+
+	$("#map").append(catanMapPin);
 	
 
 	var lcMapPin =$('<img src="img/map_pin.png" />');
@@ -115,9 +128,8 @@ $(document).ready(function(){
 					top: e.pageY-pinOffsetTop,
 					cursor: 'pointer'
 				});
-				
 				$("#map").append(mapPin);
-				location.href = "eventCreatorIonic.html";
+				//location.href = "eventCreatorIonic.html";
 				inAddMode = false;
 			//Now make the app take you to the event creation page
 			}
