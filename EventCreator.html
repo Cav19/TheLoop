@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+	<body>
+		<h1>Create an Event</h1>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label class = "control-label col-sm-2" for="eventName">Event Name:</label>
+					<div class="col-sm-7">
+					<input type = "text"
+							class = "form-control"
+							id = "myEvent"
+							/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class = "control-label col-sm-2" for="eventDescription">Description:</label>
+					<div class="col-sm-7">
+					<input type = "text"
+							class= "form-control"
+							id = "myDescription"
+							/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class = "control-label col-sm-2" for="eventLocation">Location:</label>
+					<div class="col-sm-7">
+					<input type = "text"
+							class = "form-control"
+							id = "myLocation"
+							/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class = "control-label col-sm-2" for="eventTime">Time:</label>
+					<div class="col-sm-7">
+					<input type = "time"
+							class = "form-control"
+							id = "myTime"
+							/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class = "control-label col-sm-2" for="eventCategory">Category:</label>
+					<div class="col-sm-7">
+					<input type = "text"
+							class = "form-control"
+							id = "myCategory"
+							/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class = "control-label col-sm-2" for= "eventImage">Img<br>(Optional)</label>
+					<div class="col-sm-7">
+					<input type = "image"
+							class = "form-control"
+							id = "myImage"
+							/>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Done</button>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
