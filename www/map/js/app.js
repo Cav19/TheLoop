@@ -23,6 +23,7 @@ $(document).ready(function(){
 			cursor: 'pointer'
 		});
 		$("#map").append(img);
+		//Now make the app take you to the event creation page
 	});
 	//end of addMode
 });

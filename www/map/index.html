@@ -4,6 +4,7 @@
 	<head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="js/app.js"></script>
+
 	</head>
 
 	<body>
@@ -12,7 +13,29 @@
 		<img src="img/map_south.PNG" style="width: 100%; height: 45%;">
 		-->
 		<div id="map">
-			<img id="map_img" src="img/map.PNG" style=" position: relative; width: 100%;height: auto;"> 
+			<img id="map_img" src="img/map.PNG" style=" position: relative; width: 100%;height: auto; border-style: solid"> 
+
+			<script>
+				var mapWidth = $('#map_img').width();
+				var mapHeight = $('#map_img').height();
+				var addSignWidth = mapWidth*(0.04);
+				var addSignHeight = addSignWidth;
+
+				var addSign =  $('<img src="img/add_img.png" />');
+				var offsetLeft = addSignWidth;
+				var offsetTop = addSignHeight;
+
+				addSign.css({
+					position: 'absolute',
+					width: addSignWidth,
+					height: addSignWidth,
+					left: mapWidth-offsetLeft - mapWidth*(0.001),
+					top:  mapHeight*(0.04) ,
+					cursor: 'pointer'
+				});
+
+				$("#map").append(addSign);
+			</script>
 
 		</div>
 	</body>
