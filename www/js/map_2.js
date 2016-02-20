@@ -3,6 +3,8 @@
 
 $(document).ready(function(){
 	var inAddMode = false;
+	$("#myModal").modal({show : false});
+
 	var mapWidth = $("#map_img").width();
 	var mapHeight = $("#map_img").height();
 	//Must keep the pixel ratio of original image constant
@@ -139,6 +141,10 @@ $(document).ready(function(){
 
 		$(document).on('click', '#map_pin', function(){
 			//display info about event
-			alert("Info needed");
+			$("#myModal").modal('show');
+		});
+
+		$("#event").click(function(){
+			location.href = "EventInfo.html";
 		});
 });
