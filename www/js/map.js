@@ -84,7 +84,7 @@ $(document).ready(function(){
 		position: 'absolute',
 		width: addSignWidth,
 		height: addSignWidth,
-		left: mapWidth-offsetLeft - mapWidth*(0.001),
+		left: mapWidth-offsetLeft - mapWidth*(0.01),
 		top:  mapHeight*(0.04) ,
 		cursor: 'pointer'
 	});
