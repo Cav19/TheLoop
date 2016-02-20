@@ -73,10 +73,9 @@ $(document).ready(function(){
 					top: e.pageY-pinOffsetTop,
 					cursor: 'pointer'
 				});
-				alert(e.pageX-pinOffsetLeft)
-				alert(e.pageY-pinOffsetTop)
+				
 				$("#map").append(mapPin);
-
+				location.href = "eventCreatorIonic.html";
 				inAddMode = false;
 			//Now make the app take you to the event creation page
 			}
