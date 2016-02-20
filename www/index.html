@@ -2,9 +2,10 @@
 <html>
 
 	<head>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 		<script src="js/map.js"></script>
-
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	</head>
 
 	<body>
@@ -15,5 +16,32 @@
 		<div id="map">
 			<img id="map_img" src="img/map.PNG" style=" position: relative; width: 100%;height: auto; border-style: solid"> 
 		</div>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Frisbee 6:00 PM @ Fieldhouse</h4>
+		        <button type="button" id="rsvp" style="color:red">RSVP</button>
+		      </div>
+		      <!--
+		      <div class="modal-body">
+		        <p>Some text in the modal.</p>
+		      </div>
+		      -->
+		      <!--
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		      -->
+		    </div>
+
+		  </div>
+		</div>
+
 	</body>
 </html>
